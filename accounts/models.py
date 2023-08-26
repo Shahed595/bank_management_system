@@ -40,7 +40,7 @@ class UserAddress(models.Model):
     street_address = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
     postal_code = models.PositiveIntegerField()
-    countr = models.CharField(max_length=100) 
+    country = models.CharField(max_length=100) 
     
     def __str__(self):
         return self.user.email   
